@@ -11,5 +11,6 @@ struct Member: Identifiable{
     var id = UUID()
     var picname: [String]
     var name: String
+    var speak: String
     var content: String
 }

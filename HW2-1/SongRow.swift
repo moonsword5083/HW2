@@ -33,7 +33,7 @@ struct SongRow_Previews: PreviewProvider {
 struct songImage: View {
     var song: Song
     var body: some View {
-        Image(song.picname)
+        Image(song.picname[0])
             .resizable()
             .scaledToFill()
             .frame(width: 80,height: 80)

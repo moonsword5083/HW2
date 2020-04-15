@@ -13,6 +13,8 @@ struct MemberDetail: View {
     var body: some View {
         VStack{
             MemberImage(member: member)
+            Text(member.speak)
+                .padding()
             Text(member.content)
                 .padding()
         }

@@ -17,7 +17,7 @@ struct SongList: View {
                         HStack(spacing: 10){
                             ForEach(nowSongs){(index) in
                                 NavigationLink(destination: SongDetail(song: index)){
-                                    Image(index.picname)
+                                   Image(index.picname[0])
                                         .renderingMode(.original)
                                         .resizable()
                                         .scaledToFit()
@@ -26,7 +26,8 @@ struct SongList: View {
                             }
                         }
                         .frame(height:250)
-                    }                }
+                    }
+                }
                 
                 Section(header: Text("大型活動")){
                     ForEach(songs){(index) in

@@ -74,11 +74,11 @@
 			children = (
 				36982B8424471792008DF166 /* Song.swift */,
 				36982B8224471792008DF166 /* SongDetail.swift */,
+				36982B7B2447177B008DF166 /* Data.swift */,
 				36982B8124471792008DF166 /* SongList.swift */,
 				36982B8324471792008DF166 /* SongRow.swift */,
 				36982B7D24471786008DF166 /* Member.swift */,
 				36982B7E24471786008DF166 /* MemberDetail.swift */,
-				36982B7B2447177B008DF166 /* Data.swift */,
 				36982B7924471767008DF166 /* AppView.swift */,
 				36982B63244716DD008DF166 /* AppDelegate.swift */,
 				36982B65244716DD008DF166 /* SceneDelegate.swift */,

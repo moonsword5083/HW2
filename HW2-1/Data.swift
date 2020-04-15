@@ -8,32 +8,33 @@
 
 import Foundation
 let songs = [
-    Song(picname: "騎兵與獵人", activity: "騎兵與獵人", date: "2019.5.30", content: "a"),
-    Song(picname: "火蓝之心", activity: "火藍之心", date: "2019.8.15", content: "b"),
-    Song(picname: "喧闹法则", activity: "喧鬧法则", date: "2019.11.19", content: "c")
+    Song(picname: ["騎兵與獵人", "骑兵与猎人_3"], activity: "騎兵與獵人", date: "2019.5.30", content: "a"),
+    Song(picname: ["火蓝之心", "火蓝之心_3"], activity: "火藍之心", date: "2019.8.15", content: "b"),
+    Song(picname: ["喧闹法则", "喧闹法则_3"], activity: "喧鬧法则", date: "2019.11.19", content: "c")
 ]
 
 let storySongs = [
-    Song(picname: "战地秘闻", activity: "戰地秘聞", date: "2019.10.15", content: "a"),
-    Song(picname: "洪炉示岁", activity: "洪爐示歲", date: "2020.1.9", content: "b"),
-    Song(picname: "午间逸话", activity: "午間逸話", date: "2020.2.25", content: "c")
+    Song(picname: ["战地秘闻", "战地秘闻_2"], activity: "戰地秘聞", date: "2019.10.15", content: "a"),
+    Song(picname: ["洪炉示岁", "洪炉示岁_2"], activity: "洪爐示歲", date: "2020.1.9", content: "b"),
+    Song(picname: ["午间逸话", "午间逸话_2"], activity: "午間逸話", date: "2020.2.25", content: "c")
 ]
 
 let crisisSongs = [
-    Song(picname: "危机合约", activity: "危機合約", date: "2019.11.19", content: "a"),
-    Song(picname: "危机合约_荒芜行动", activity: "危機合約：荒蕪行動", date: "2020.3.17", content: "b")
+    Song(picname: ["危机合约", "危机合约_2"], activity: "危機合約", date: "2019.11.19", content: "a"),
+    Song(picname: ["危机合约_荒芜行动", "危机合约_荒芜行动_2"], activity: "危機合約：荒蕪行動", date: "2020.3.17", content: "b")
 ]
 
 let nowSongs = [
-    Song(picname: "春季限时日常活动", activity: "春季限時日常活動", date: "2020.4.6", content: "a"),
-    Song(picname: "生于黑夜", activity: "生於黑夜", date: "2020.4.21", content: "b")
+    Song(picname: ["春季限时日常活动", "春季限时日常活动"], activity: "春季限時日常活動", date: "2020.4.6", content: "a"),
+    Song(picname: ["生于黑夜", "生于黑夜_３"], activity: "生於黑夜", date: "2020.4.21", content: "b")
 ]
 
 let member = [
-    Member(picname: ["艾雅法拉", "艾雅法拉_2"], name: "艾雅法拉", content: "a"),
-    Member(picname: ["黑", "黑_2", "黑_skin"], name: "黑", content: "b"),
-    Member(picname: ["闪灵", "闪灵_2", "闪灵_skin"], name: "閃靈", content: "b"),
-    Member(picname: ["年", "年_2"], name: "年", content: "b"),
-    Member(picname: ["推进之王", "推进之王_2", "推进之王_skin"], name: "推進之王", content: "b"),
-    Member(picname: ["斯卡蒂", "斯卡蒂_2"], name: "斯卡蒂", content: "b")
+    Member(picname: ["艾雅法拉", "艾雅法拉_2"], name: "艾雅法拉", speak: "「礦石病，究竟會把我變成什麼樣子呢？」", content:"艾雅法拉，火山學家，天災信使。於高等源石技藝、高能量法術釋放等领域展现出了卓越的天赋。\n現於羅德島接受治治療，同时為羅德島提供天災研究、環境觀察與評估、危险地形航行保障等相關服務。"),
+    Member(picname: ["黑", "黑_2", "黑_skin"], name: "黑", speak: "「一旦手上沾染鲜血，就再也不能回頭了」", content:"前汐斯塔市市長SP兼城市治安局局長，随幹員錫蘭共同加入羅德島。在隱秘行动、偵查與反偵查、野外求生、弩使用等技能上擁有卓越的造詣。\n在擔任博士護衛的同时，負責一部分羅德島基層幹員的訓練工作。"),
+    Member(picname: ["闪灵", "闪灵_2", "闪灵_skin"], name: "閃靈", speak:"「現在？現在，什麼都没有了。那場戰爭，剝奪了我们所有的希望。」", content:"閃靈，薩卡兹醫師，前薩卡兹醫療組織“赦罪師”成員，感染者援助團體“使徒”的一員。於源石技藝、戰場急救、醫學理論、臨床醫學等领域擁有淵博知識。\n現作為醫療幹員為羅德島醫療部門提供源石技藝理論，並為多項行動提供戰場醫療救護服務。"),
+    Member(picname: ["年", "年_2"], name: "年", speak: "「龍門的花椒實在太不夠味兒了。」", content:"年，無業遊民，熟習各類金屬工藝，擁有與身份不符的淵博冶金知識。現憑訪客身份逗留於羅德島，偶爾為羅德島的金屬加工項目提供建議。聲稱自己擅長音像娛樂工作，經常提供一些羅德島幹員普遍不太喜愛的音像產品。"),
+    Member(picname: ["推进之王", "推进之王_2", "推进之王_skin"], name: "推進之王", speak:"「我做了個夢……那是太陽升起的地方。視線無法觸及之處，我的祖國就在那裡……我或许，再也回不去了。」", content:"維娜，代號推進之王，維多利亞公民，大部分履歷缺失。存在數項未被證實的指控記錄。在殲滅戰、攻堅戰、對抗硬目標等任務中表現出色。於多個測試中皆獲得優異成績，遂獲準加入羅德島。現作為先鋒人員，於羅德島某作戰小隊擔任隊長。"),
+    Member(picname: ["斯卡蒂", "斯卡蒂_2"], name: "斯卡蒂", speak: "「離我那麽近……我，我可沒有能完全保護你的自信！」", content:"斯卡蒂，賞金獵人，現為羅德島所雇傭。在過去完成的賞金任務中，於對抗大型生物，破壞硬目標，攻堅戰，殲滅戰等多類行動中展現出強勁實力，推測與其過往戰鬥經驗相關。\n成為賞金獵人之前的履歷缺失。現於羅德島某攻堅小隊供職，同時身兼單兵任務預備執行幹員一職。")
 ]
+

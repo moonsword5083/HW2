@@ -29,10 +29,14 @@ struct SongDetail_Previews: PreviewProvider {
 struct SongImage: View {
     var song: Song
     var body: some View {
-        Image(song.picname)
-            .resizable()
-            .scaledToFit()
-            .frame(height: 150)
-            .clipped()
+        ScrollView(.horizontal){
+            HStack(spacing: 10){
+                Image(self.song.picname[1])
+                .resizable()
+                .scaledToFit()
+                .frame(height: 250)
+                .clipped()
+            }
+        }
     }
 }
