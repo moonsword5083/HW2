@@ -53,9 +53,7 @@ struct CharacterSecond: View {
     var body: some View {
         ForEach(0..<self.names[self.row].count){(column) in
             NavigationLink(destination: MemberDetail(member: member[(self.row*2)+column])) {
-                VStack {
-                    CharacterImage(row: self.row, column: column)
-                }
+                CharacterImage(row: self.row, column: column)
             }
         }
     }
@@ -68,16 +66,18 @@ struct CharacterImage: View {
     var row: Int
     var column: Int
     var body: some View {
-        Image(self.names[self.row][column])
-            .renderingMode(.original)
-            .resizable()
-            .frame(width: 190, height: self.photoWidth)
-            .background(Image("背景").renderingMode(.original).resizable().scaledToFill().opacity(0.8))
-            .clipShape(Circle())
-            .overlay(Circle().stroke(Color.white))
-            .shadow(radius: 8)
-            .clipped()
-         /*Text(member[(self.row*2)+self.column].name)
-            .foregroundColor(Color(hue: 0.535, saturation: 0.752, brightness: 0.882))*/
+                VStack {
+                    Image(self.names[self.row][self.column])
+                       .renderingMode(.original)
+                       .resizable()
+                       .frame(width: 190, height: self.photoWidth)
+                       .background(Image("背景").renderingMode(.original).resizable().scaledToFill().opacity(0.8))
+                       .clipShape(Circle())
+                       .overlay(Circle().stroke(Color.white))
+                       .shadow(radius: 8)
+                       .clipped()
+                    Text(member[(self.row*2)+self.column].name)
+                       .foregroundColor(Color(hue: 0.535, saturation: 0.752, brightness: 0.882))
+                }
     }
 }

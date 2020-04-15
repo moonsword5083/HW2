@@ -40,6 +40,7 @@
 		36982B8224471792008DF166 /* SongDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDetail.swift; sourceTree = "<group>"; };
 		36982B8324471792008DF166 /* SongRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
 		36982B8424471792008DF166 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		3BCBA54324474BB1003A0E05 /* Arknights.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Arknights.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		36982B62244716DD008DF166 /* HW2-1 */ = {
 			isa = PBXGroup;
 			children = (
+				3BCBA54324474BB1003A0E05 /* Arknights.entitlements */,
 				36982B8424471792008DF166 /* Song.swift */,
 				36982B8224471792008DF166 /* SongDetail.swift */,
 				36982B7B2447177B008DF166 /* Data.swift */,
@@ -316,8 +318,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HW2-1/Arknights.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HW2-1/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HW2-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-0657143.HW2-1";
 				PRODUCT_NAME = Arknights;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,8 +341,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HW2-1/Arknights.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HW2-1/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HW2-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-0657143.HW2-1";
 				PRODUCT_NAME = Arknights;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
