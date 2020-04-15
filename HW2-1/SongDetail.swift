@@ -9,34 +9,34 @@
 import SwiftUI
 
 struct SongDetail: View {
+    @State private var show = false
     var song: Song
     var body: some View {
         VStack{
-            SongImage(song: song)
-            Text(song.content)
-                .padding()
+            if show{
+                HStack(spacing: 10){
+                        Image(self.song.picname[1])
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 280)
+                            .clipped()
+                            .transition(.opacity)
+                }
+                Text(song.content)
+                    .padding()
+            }
+            
         }
-        .navigationBarTitle(song.activity)
+        .navigationBarTitle(song.activity)   .animation(.easeInOut(duration: 2))
+        .onAppear{
+            self.show = true
+        }
     }
+
 }
 
 struct SongDetail_Previews: PreviewProvider {
     static var previews: some View {
         SongDetail(song: songs[0])
-    }
-}
-
-struct SongImage: View {
-    var song: Song
-    var body: some View {
-        ScrollView(.horizontal){
-            HStack(spacing: 10){
-                Image(self.song.picname[1])
-                .resizable()
-                .scaledToFit()
-                .frame(height: 250)
-                .clipped()
-            }
-        }
     }
 }
