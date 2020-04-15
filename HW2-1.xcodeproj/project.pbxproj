@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36982B60244716DD008DF166 /* HW2-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW2-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36982B60244716DD008DF166 /* Arknights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arknights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36982B63244716DD008DF166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36982B65244716DD008DF166 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		36982B67244716DD008DF166 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		36982B61244716DD008DF166 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36982B60244716DD008DF166 /* HW2-1.app */,
+				36982B60244716DD008DF166 /* Arknights.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 			);
 			name = "HW2-1";
 			productName = "HW2-1";
-			productReference = 36982B60244716DD008DF166 /* HW2-1.app */;
+			productReference = 36982B60244716DD008DF166 /* Arknights.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -325,7 +325,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-0657143.HW2-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Arknights;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -344,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-0657143.HW2-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Arknights;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
